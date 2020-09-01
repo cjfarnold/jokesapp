@@ -1,19 +1,19 @@
-package controllers;
+package guru.springframework.sfgpetclinic.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import services.JokeService;
+import guru.springframework.sfgpetclinic.services.JokeServiceImpl;
 
 @Controller
 public class JokeController {
 
-	private final JokeService jokeService;
+	private final JokeServiceImpl jokeService;
 
 	@Autowired
-	public JokeController(JokeService jokeService) {
+	public JokeController(JokeServiceImpl jokeService) {
 
 		this.jokeService = jokeService;
 	}
